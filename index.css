@@ -311,6 +311,7 @@ iframe {
 
     .nav {
         width: 70%;
+        font-size: medium;
     }
 
     .fondo {
@@ -369,6 +370,9 @@ iframe {
 
     .img5 {
         width: 300px;
+    }
+    .body2{
+        margin-left: 0;
     }
  }
 
@@ -458,3 +462,96 @@ iframe {
             height: 150px;
         }
     }
+
+    @media only screen and (max-width: 320px) {
+        header{
+            width: 0;
+            min-width: 320px;
+        }
+        .body2{
+            margin-top: 0;
+            margin-left: 0%;
+            display: block;
+        }
+        .sectionimg{
+            padding-left: 0;
+        }
+        .fondo {
+            font-size: x-small;
+        }
+        .imgborder{
+            width: 100px;
+            margin-top: 1rem;
+        }
+        .textinformation p{
+            padding: 0;
+            font-size: small;
+        }
+        .img1{
+            margin: 0;
+        }
+        .text1{
+            margin-left: 0;
+            font-size: small;
+        }
+        .border1{
+            width: 100px;
+        }
+        .imageborder{
+            width: 100px;
+            margin-top: 1rem;
+        }
+        .textinformation2{
+            font-size: small;
+        }
+        .footer{
+            font-size: x-small;
+        }
+        .tips{
+            padding: 0;
+            font-size: small;
+            flex-direction: column;
+            margin-left: 1rem;
+        }
+        .tips2 {
+            margin-left: 1rem;
+            padding: 0;
+            font-size: small;
+            flex-direction: column;
+        }
+        .img5{
+            width: 100px;
+            margin-top: 2rem;
+        }
+        .formclass{
+            margin: 1rem;
+            font-size: small;
+        }
+        .formimg{
+            margin: 1rem;
+            width: 250px;
+        }
+        .formdiv{
+            margin-top: 0;
+        }
+        iframe{
+            margin-right: 0;
+            width: 100px;
+            height: 100px;
+        }
+        .nav{
+            font-size: x-small;
+            flex-direction: column;
+            margin-left: 1rem;
+        }
+        .logo{
+            width: 4rem;
+        }
+        table{
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+        td{
+            padding: 0;
+    }
+    
