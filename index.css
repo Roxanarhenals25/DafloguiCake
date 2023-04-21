@@ -4,20 +4,23 @@
     box-sizing: border-box;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     border-bottom: thick double rgba(229, 221, 221, 0.8);
-    ;
     position: fixed;
     background-color: black;
 }
 
+.logo {
+    width: 5rem;
+}
+
 .nav {
     display: flex;
-    width: 600px;
+    width: 35%;
     justify-content: space-around;
     font-size: 20px;
     font: italic 20px serif;
@@ -71,17 +74,27 @@ header {
 
 .fondo {
     background-color: rgb(142, 142, 94);
-    padding-top: 110px;
+    padding-top: 100px;
 }
 
 .imgborder {
     border: thick double black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    width: 500px;
+}
+
+.sectionimg {
+    padding-left: 45rem;
 }
 
 /* contact page*/
 
 .imageborder {
     border: thick double black;
+    width: 500px;
 }
 
 h1 {
@@ -149,11 +162,6 @@ body {
     text-decoration: none;
     color: black;
     align-items: center;
-}
-
-footer {
-    display: flex;
-    align-items: center;
     justify-content: space-around;
 }
 
@@ -219,8 +227,9 @@ td {
 }
 
 .img5 {
-    margin: 40px;
+    margin: 30px;
     border: thick double black;
+    width: 400px;
 }
 
 .ul {
@@ -243,8 +252,8 @@ td {
     display: block;
     margin: 2rem;
     justify-content: center;
-    margin-left: 30rem;
     border: thick double black;
+    width: 400px;
 }
 
 .formdiv {
@@ -254,6 +263,7 @@ td {
 }
 
 .body2 {
+    margin-left: 30rem;
     display: flex;
     align-items: center;
     font: italic 20px serif;
@@ -264,24 +274,187 @@ td {
     color: black;
     align-items: center;
 }
-h4{
+
+h4 {
     margin: 0;
     margin-top: 1rem;
 }
-textarea{
-    resize:none;
+
+textarea {
+    resize: none;
 }
-.terms{
+
+.terms {
     font-size: small;
 }
-.iframe{
-   margin-top: 1rem;
-   border-top: thick double rgba(229, 221, 221, 0.8);
+
+.iframe {
+    margin-top: 1rem;
+    border-top: thick double rgba(229, 221, 221, 0.8);
+
 }
-iframe{
+
+iframe {
     margin: 1rem;
     margin-right: 80rem;
 }
-.send{
+
+.send {
     margin-left: 6rem;
 }
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    header {
+        min-width: 769px;
+        justify-content: space-around;
+    }
+
+    .nav {
+        width: 70%;
+    }
+
+    .fondo {
+        font-size: small;
+    }
+
+    .formimg {
+        margin-left: 5%;
+        width: 300px;
+        margin-bottom: 5%;
+    }
+
+    .formclass {
+        margin-left: 8rem;
+        font-size: small;
+    }
+
+    iframe {
+        margin: 1;
+        margin-right: 0;
+    }
+
+    .sectionimg {
+        padding-left: 4rem;
+        margin-top: 1rem;
+    }
+
+    .imgborder {
+        width: 400px;
+    }
+
+    .img1 {
+        margin: 0;
+    }
+
+    .text1 {
+        margin-left: 2rem;
+    }
+
+    table {
+        margin-left: 5rem;
+    }
+
+    .tips {
+        padding: 0;
+    }
+
+    .tips2 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ul {
+        margin-left: 0;
+    }
+
+    .img5 {
+        width: 300px;
+    }
+ }
+
+    @media only screen and (min-width: 320px) and (max-width:768px) {
+        header {
+            width: 60%;
+            min-width: 320px;
+            justify-content: space-around;
+        }
+        .nav{
+            width: 60%;
+            font-size: medium;
+        }
+        .body2{
+            margin-top: 1rem;
+            margin-left: 0%;
+        }
+        .sectionimg{
+            padding-left: 5rem;
+        }
+        .fondo {
+            font-size: small;
+        }
+        .imgborder{
+            width: 350px;
+            margin-top: 2rem;
+        }
+        .textinformation p{
+            padding: 0;
+            font-size: medium;
+        }
+        .img1{
+            margin: 0;
+        }
+        .text1{
+            margin-left: 2rem;
+            font-size: medium;
+        }
+        .border1{
+            width: 250px;
+        }
+        .imageborder{
+            width: 350px;
+            margin-top: 3rem;
+        }
+        .textinformation2{
+            font-size: medium;
+        }
+        .footer{
+            font-size: small;
+        }
+        table{
+            margin-left: 8rem;
+            margin-top: 5rem;
+        }
+        td{
+            padding: 1rem;
+        }
+        .tips{
+            padding: 0;
+            font-size: medium;
+        }
+        .tips2 {
+            margin: 0;
+            padding: 0;
+            font-size: medium;
+        }
+        .img5{
+            width: 300px;
+            margin-top: 5rem;
+        }
+        .formclass{
+            margin-left: 1rem;
+            font-size: medium;
+        }
+        .formimg{
+            width: 300px;
+            margin: 1rem;
+            height: 15rem;
+        }
+        .formdiv{
+            margin-top: 0;
+        }
+        iframe{
+            margin-right: 0;
+            width: 150px;
+            height: 150px;
+        }
+    }
